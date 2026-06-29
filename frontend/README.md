@@ -26,3 +26,15 @@ Set `NEXT_PUBLIC_GRAPHQL_URL` in `.env.local` if the backend runs elsewhere.
 5. Return to the dashboard to see real summary data from the backend.
 
 Authentication is intentionally basic for the MVP and stores the user in `localStorage`. A production version should use JWT or secure cookies, stronger authorization, tests and deployment hardening.
+
+## Deploy to Netlify
+
+This repo includes a root `netlify.toml` because the Next.js app lives in `frontend/`.
+
+In Netlify, set this environment variable:
+
+```txt
+NEXT_PUBLIC_GRAPHQL_URL=https://your-backend-url.example.com/graphql
+```
+
+Then deploy from GitHub. Netlify will run `npm run build` inside `frontend/` and publish the `.next` output with its Next.js runtime.

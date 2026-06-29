@@ -43,6 +43,8 @@ You can also run the backend with Docker from the project root:
 docker compose up --build backend
 ```
 
+For production deployment, see [DEPLOYMENT.md](./DEPLOYMENT.md).
+
 ## Useful Flow
 
 1. Register a user with `registerUser`.

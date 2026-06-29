@@ -1,0 +1,25 @@
+{
+  "name": "child-health-record-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch src/index.ts",
+    "start": "bun src/index.ts",
+    "db:init": "bun src/db/init.ts",
+    "db:seed": "bun src/db/seed.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "graphql": "^16.10.0",
+    "graphql-yoga": "^5.10.10"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/bun": "^1.1.14",
+    "@types/cors": "^2.8.17",
+    "typescript": "^5.7.2"
+  }
+}
